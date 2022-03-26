@@ -1,0 +1,11 @@
+:host {
+  height: 100vh;
+  display: block;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 3rem 0;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
