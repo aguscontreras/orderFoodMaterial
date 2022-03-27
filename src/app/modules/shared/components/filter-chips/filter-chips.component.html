@@ -1,0 +1,9 @@
+<mat-chip-list aria-label="Food filter" [multiple]="true">
+  <mat-chip
+    *ngFor="let item of model; let i = index"
+    color="primary"
+    [selected]="item.selected"
+    (click)="onClick(i)"
+    >{{ item.label }}</mat-chip
+  >
+</mat-chip-list>
