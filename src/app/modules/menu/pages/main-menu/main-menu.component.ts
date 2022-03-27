@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { first } from 'rxjs';
+import { MenuService } from '../../services/menu.service';
+import { ChipFilter } from '../../../shared/models';
 
 @Component({
   selector: 'app-main-menu',
@@ -6,7 +9,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-menu.component.scss'],
 })
 export class MainMenuComponent implements OnInit {
-  constructor() {}
+  chipsModel: { label: string; value: any }[];
 
-  ngOnInit(): void {}
+  constructor(private readonly menuService: MenuService) {}
+
+  ngOnInit(): void {
+    this.menuService
+      .getCategorias()
+      .pipe(first())
+      .subscribe({
+        next: (categorias) => {
+          this.chipsModel = categorias.map((e) => {
+            return { label: e.displayName, value: { ...e } };
+          });
+        },
+      });
+  }
+
+  onChipSelect(selected: ChipFilter[]): void {
+    const selectedIds = selected.map((e) => e.value.id);
+    console.log(selectedIds);
+  }
 }

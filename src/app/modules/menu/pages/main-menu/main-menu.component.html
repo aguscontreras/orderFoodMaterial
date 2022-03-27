@@ -6,32 +6,30 @@
 
 <div class="row mt-5">
   <div class="col">
-    <mat-chip-list aria-label="Fish selection">
-      <mat-chip>One fish</mat-chip>
-      <mat-chip>Two fish</mat-chip>
-      <mat-chip color="primary" selected>Primary fish</mat-chip>
-      <mat-chip selected>Accent fish</mat-chip>
-    </mat-chip-list>
+    <app-filter-chips
+      [model]="chipsModel"
+      (select)="onChipSelect($event)"
+    ></app-filter-chips>
   </div>
 </div>
 
 <div class="row">
-  <div class="col-lg-4 mt-4">
+  <div class="col-md-6 col-lg-4 mt-4">
     <app-menu-item></app-menu-item>
   </div>
-  <div class="col-lg-4 mt-4">
+  <div class="col-md-6 col-lg-4 mt-4">
     <app-menu-item></app-menu-item>
   </div>
-  <div class="col-lg-4 mt-4">
+  <div class="col-md-6 col-lg-4 mt-4">
     <app-menu-item></app-menu-item>
   </div>
-  <div class="col-lg-4 mt-4">
+  <div class="col-md-6 col-lg-4 mt-4">
     <app-menu-item></app-menu-item>
   </div>
-  <div class="col-lg-4 mt-4">
+  <div class="col-md-6 col-lg-4 mt-4">
     <app-menu-item></app-menu-item>
   </div>
-  <div class="col-lg-4 mt-4">
+  <div class="col-md-6 col-lg-4 mt-4">
     <app-menu-item></app-menu-item>
   </div>
 </div>
