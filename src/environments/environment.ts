@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiUrl: 'https://api.npoint.io',
+  endpoints: {
+    categorias: '39bba81136ff6641e8d6',
+  },
 };
 
 /*
