@@ -10,6 +10,14 @@ const routes: Routes = [
   },
 
   {
+    path: 'checkout',
+    loadChildren: () =>
+      import('./modules/checkout/checkout.module').then(
+        (m) => m.CheckoutModule
+      ),
+  },
+
+  {
     path: '',
     redirectTo: 'menu',
     pathMatch: 'full',

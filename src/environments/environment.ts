@@ -4,10 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'https://api.npoint.io',
-  endpoints: {
-    categorias: '39bba81136ff6641e8d6',
-  },
+  apiUrl: 'http://localhost:3000',
 };
 
 /*

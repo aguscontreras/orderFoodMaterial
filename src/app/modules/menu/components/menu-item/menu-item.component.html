@@ -1,7 +1,7 @@
 <mat-card>
   <mat-card-header>
-    <mat-card-title>Título item</mat-card-title>
-    <mat-card-subtitle>Categoría</mat-card-subtitle>
+    <mat-card-title>{{ item.name }}</mat-card-title>
+    <mat-card-subtitle>{{ item.category?.display_name }}</mat-card-subtitle>
   </mat-card-header>
   <img
     mat-card-image
@@ -9,10 +9,19 @@
     alt="Photo of a Shiba Inu"
   />
   <mat-card-content>
-    <p>Descripción del item</p>
+    <p>{{ item.description }}</p>
   </mat-card-content>
   <mat-card-actions>
-    <button mat-flat-button color="primary">AGREGAR</button>
-    <button mat-button>VER DETALLE</button>
+    <button
+      mat-flat-button
+      color="primary"
+      type="button"
+      (click)="onAgregar(item.id)"
+    >
+      AGREGAR
+    </button>
+    <button mat-button type="button" (click)="onDetalle(item.id)">
+      VER DETALLE
+    </button>
   </mat-card-actions>
 </mat-card>

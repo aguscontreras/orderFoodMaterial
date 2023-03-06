@@ -1,0 +1,63 @@
+<h1 class="mb-3 mat-display-2">Carrito</h1>
+<h3 class="mat-h3">
+  Completá los datos de facturación y envío para realizar la compra.
+</h3>
+
+<div class="row">
+  <div class="col">
+    <mat-stepper [linear]="true" #stepper>
+      <mat-step [stepControl]="formEnvio" label="Envío">
+        <form [formGroup]="formEnvio">
+          <div>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+
+      <mat-step [stepControl]="formPago" label="Pago">
+        <form [formGroup]="formPago">
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button mat-button matStepperNext>Next</button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step>
+        <ng-template matStepLabel>Done</ng-template>
+        <p>You are now done.</p>
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button (click)="stepper.reset()">Reset</button>
+        </div>
+      </mat-step>
+    </mat-stepper>
+  </div>
+
+  <div class="col-md-5">
+    <mat-accordion [multi]="true">
+      <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title> Items en carrito </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>This is the primary content of the panel.</p>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel
+        [expanded]="true"
+        (opened)="panelOpenState = true"
+        (closed)="panelOpenState = false"
+      >
+        <mat-expansion-panel-header>
+          <mat-panel-title> Detalle del pago </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>I'm visible because I am open</p>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-card class="mt-3">
+      <mat-card-content>
+        <p>Total de la orden $1500</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>

@@ -14,22 +14,11 @@
 </div>
 
 <div class="row">
-  <div class="col-md-6 col-lg-4 mt-4">
-    <app-menu-item></app-menu-item>
-  </div>
-  <div class="col-md-6 col-lg-4 mt-4">
-    <app-menu-item></app-menu-item>
-  </div>
-  <div class="col-md-6 col-lg-4 mt-4">
-    <app-menu-item></app-menu-item>
-  </div>
-  <div class="col-md-6 col-lg-4 mt-4">
-    <app-menu-item></app-menu-item>
-  </div>
-  <div class="col-md-6 col-lg-4 mt-4">
-    <app-menu-item></app-menu-item>
-  </div>
-  <div class="col-md-6 col-lg-4 mt-4">
-    <app-menu-item></app-menu-item>
+  <div class="col-md-6 col-lg-3 mt-4" *ngFor="let item of menuItems">
+    <app-menu-item
+      [menuItem]="item"
+      (select)="onItemSelect($event)"
+      (detail)="onItemDetail($event)"
+    ></app-menu-item>
   </div>
 </div>

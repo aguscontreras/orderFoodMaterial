@@ -1,0 +1,530 @@
+{
+  "ingredients": [
+    {
+      "code": "meat_burger",
+      "display_name": "Medallón de carne",
+      "expansible": false,
+      "price": 100,
+      "expanded_price": 0,
+      "id": 1
+    },
+    {
+      "code": "chicken_burger",
+      "display_name": "Medallón de pollo",
+      "expansible": false,
+      "price": 100,
+      "expanded_price": 0,
+      "id": 2
+    },
+    {
+      "code": "bread_burger",
+      "display_name": "Pan de hamburguesa",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 3
+    },
+    {
+      "code": "tomato",
+      "display_name": "Tomate",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 4
+    },
+    {
+      "code": "lettuce",
+      "display_name": "Lechuga",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 5
+    },
+    {
+      "code": "ham",
+      "display_name": "Jamón",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 6
+    },
+    {
+      "code": "cheddar_cheese",
+      "display_name": "Queso cheddar",
+      "expansible": true,
+      "price": 15,
+      "expanded_price": 15,
+      "id": 7
+    },
+    {
+      "code": "ptotato_bread",
+      "display_name": "Pan de papa",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 8
+    },
+    {
+      "code": "tybo_cheese",
+      "display_name": "Queso tybo",
+      "expansible": false,
+      "price": 15,
+      "expanded_price": 0,
+      "id": 9
+    },
+    {
+      "code": "egg",
+      "display_name": "Huevo",
+      "expansible": false,
+      "price": 15,
+      "expanded_price": 0,
+      "id": 10
+    },
+    {
+      "code": "veggie_burger",
+      "display_name": "Hamburguesa vegetariana",
+      "expansible": false,
+      "price": 100,
+      "expanded_price": 0,
+      "id": 11
+    },
+    {
+      "code": "potato_chips",
+      "display_name": "Papas fritas",
+      "expansible": false,
+      "price": 50,
+      "expanded_price": 0,
+      "id": 12
+    }
+  ],
+  "toppings": [
+    {
+      "code": "lettuce",
+      "display_name": "Lechuga",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 1
+    },
+    {
+      "code": "tomato",
+      "display_name": "Tomate",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 2
+    },
+    {
+      "code": "purple_onion",
+      "display_name": "Cebolla morada",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 3
+    },
+    {
+      "code": "caramelized_onion",
+      "display_name": "Cebolla caramelizada",
+      "expansible": false,
+      "price": 20,
+      "expanded_price": 0,
+      "id": 4
+    },
+    {
+      "code": "bacon",
+      "display_name": "Bacon",
+      "expansible": true,
+      "price": 20,
+      "expanded_price": 20,
+      "id": 5
+    },
+    {
+      "code": "cheddar_cheese",
+      "display_name": "Queso cheddar",
+      "expansible": true,
+      "price": 20,
+      "expanded_price": 20,
+      "id": 6
+    },
+    {
+      "code": "tybo_cheese",
+      "display_name": "Queso tybo",
+      "expansible": true,
+      "price": 20,
+      "expanded_price": 20,
+      "id": 7
+    },
+    {
+      "code": "mushrooms",
+      "display_name": "Champiñones",
+      "expansible": true,
+      "price": 20,
+      "expanded_price": 20,
+      "id": 8
+    },
+    {
+      "code": "pickle",
+      "display_name": "Pepinillos",
+      "expansible": true,
+      "price": 20,
+      "expanded_price": 20,
+      "id": 9
+    }
+  ],
+  "sauces": [
+    {
+      "code": "homemade_mayonnaise",
+      "display_name": "Mayonesa casera",
+      "id": 1
+    },
+    {
+      "code": "mustard",
+      "display_name": "Mostaza",
+      "id": 2
+    },
+    {
+      "code": "ketchup",
+      "display_name": "Ketchup",
+      "id": 3
+    },
+    {
+      "code": "barbecue",
+      "display_name": "Barbacoa",
+      "id": 4
+    }
+  ],
+  "items": [
+    {
+      "name": "Hamburguesa simple + Papas fritas",
+      "price": "",
+      "description": "Medallón de carne (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 1,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 1
+    },
+    {
+      "name": "Hamburguesa doble + Papas fritas",
+      "price": "",
+      "description": "Doble medallón de carne (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 1,
+          "quantity": 2,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 2
+    },
+    {
+      "name": "Hamburguesa triple + Papas fritas",
+      "price": "",
+      "description": "Triple medallón de carne (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 1,
+          "quantity": 2,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 3
+    },
+    {
+      "name": "Hamburguesa simple veggie + Papas fritas",
+      "price": "",
+      "description": "Medallón vegetariano (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 11,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 4
+    },
+    {
+      "name": "Hamburguesa doble veggie + Papas fritas",
+      "price": "",
+      "description": "Doble medallón vegetariano (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 11,
+          "quantity": 2,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 5
+    },
+    {
+      "name": "Hamburguesa triple veggie + Papas fritas",
+      "price": "",
+      "description": "Triple medallón vegetariano (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 11,
+          "quantity": 3,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 6
+    },
+    {
+      "name": "Hamburguesa simple de pollo + Papas fritas",
+      "price": "",
+      "description": "Medallón de pollo (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 2,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 7
+    },
+    {
+      "name": "Hamburguesa doble de pollo + Papas fritas",
+      "price": "",
+      "description": "Doble medallón de pollo (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 2,
+          "quantity": 2,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 8
+    },
+    {
+      "name": "Hamburguesa triple de pollo + Papas fritas",
+      "price": "",
+      "description": "Triple medallón de pollo (100g), queso cheddar, pan de papa, toppings y salsas a elección.",
+      "category": {
+        "id": 1,
+        "display_name": "Hamburguesas"
+      },
+      "ingredients": [
+        {
+          "id": 2,
+          "quantity": 3,
+          "expanded": false
+        },
+        {
+          "id": 7,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 8,
+          "quantity": 1,
+          "expanded": false
+        },
+        {
+          "id": 12,
+          "quantity": 1,
+          "expanded": false
+        }
+      ],
+      "toppings": [],
+      "sauces": [],
+      "id": 9
+    }
+  ],
+  "categories": [
+    {
+      "code": "burger",
+      "display_name": "Hamburguesas",
+      "type": "food",
+      "id": 1
+    },
+    {
+      "code": "pizza",
+      "display_name": "Pizzas",
+      "type": "food",
+      "id": 2
+    },
+    {
+      "code": "sandwich",
+      "display_name": "Lomos",
+      "type": "food",
+      "id": 3
+    },
+    {
+      "code": "drink",
+      "display_name": "Bebidas",
+      "type": "drink",
+      "id": 4
+    }
+  ]
+}

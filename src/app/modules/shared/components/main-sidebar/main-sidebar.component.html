@@ -1,29 +1,33 @@
-<mat-list>
+<mat-selection-list [multiple]="false">
   <div mat-subheader>Menú</div>
-  <mat-list-item>
+  <mat-list-option>
     <mat-icon matListIcon>restaurant_menu</mat-icon>
-    <p matLine><span>Nuestra carta</span></p>
-  </mat-list-item>
+    <p matLine>
+      <a mat-list-item [routerLink]="['/menu']"> Nuestra carta </a>
+    </p>
+  </mat-list-option>
 
-  <mat-list-item>
+  <mat-list-option>
     <mat-icon matListIcon matBadge="15" matBadgeColor="warn"
       >local_grocery_store</mat-icon
     >
-    <p matLine><span>Carrito</span></p>
-  </mat-list-item>
+    <p matLine>
+      <a mat-list-item [routerLink]="['/checkout']"> Carrito </a>
+    </p>
+  </mat-list-option>
 
-  <mat-list-item>
+  <mat-list-option>
     <mat-icon matListIcon>history</mat-icon>
     <p matLine><span>Historial de pedidos</span></p>
-  </mat-list-item>
+  </mat-list-option>
 
-  <mat-list-item>
+  <mat-list-option>
     <mat-icon matListIcon>store</mat-icon>
     <p matLine><span>Nuestros locales</span></p>
-  </mat-list-item>
+  </mat-list-option>
 
-  <mat-list-item>
+  <mat-list-option>
     <mat-icon matListIcon>info</mat-icon>
     <p matLine><span>Sobre nosotros</span></p>
-  </mat-list-item>
-</mat-list>
+  </mat-list-option>
+</mat-selection-list>

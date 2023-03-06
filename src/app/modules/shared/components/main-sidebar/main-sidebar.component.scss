@@ -1,10 +1,10 @@
 @use "@angular/material" as mat;
 
-$my-palette: mat.define-palette(mat.$blue-gray-palette);
+$my-palette: mat.define-palette(mat.$deep-purple-palette);
 
 :host {
   height: 100%;
   width: 100%;
   display: block;
-  background: mat.get-color-from-palette($my-palette, "darker");
+  background: mat.get-color-from-palette($my-palette, "lighter");
 }

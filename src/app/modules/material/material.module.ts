@@ -8,6 +8,8 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatStepperModule } from '@angular/material/stepper';
 
 const materialModules = [
   LayoutModule,
@@ -19,6 +21,8 @@ const materialModules = [
   MatCardModule,
   MatButtonModule,
   MatChipsModule,
+  MatExpansionModule,
+  MatStepperModule,
 ];
 
 @NgModule({

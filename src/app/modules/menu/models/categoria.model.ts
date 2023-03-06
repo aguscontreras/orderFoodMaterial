@@ -1,6 +1,6 @@
 export interface CategoriaModel {
   id: number;
-  name: string;
-  displayName: string;
+  code: string;
+  display_name: string;
   type: string;
 }
